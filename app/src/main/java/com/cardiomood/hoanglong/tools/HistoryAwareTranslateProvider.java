@@ -16,11 +16,17 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 import bolts.Task;
-import com.cardiomood.translate.provider.Language;
-import com.cardiomood.translate.provider.TranslateProvider;
-import com.cardiomood.translate.provider.TranslateProviderWrapper;
-import com.cardiomood.translate.provider.TranslatedText;
+import translate.provider.Language;
+import translate.provider.TranslateProvider;
+import translate.provider.TranslateProviderWrapper;
+import translate.provider.TranslatedText;
 
+/**
+ * Encapsulates translation functionality and uses history database as cache.
+ * Provides two different strategies to work with cache.
+ *
+ * Created by Anton Danshin on 05/12/14.
+ */
 public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
 
     private static final String TAG = HistoryAwareTranslateProvider.class.getSimpleName();
@@ -68,14 +74,14 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
     /**
      * Translate the provided text in to the target language.
      *
-     * @param text text to com.cardiomood.translate
+     * @param text text to translate
      * @param targetLanguage the target language (one of the objects returned by
      *                       {@link TranslateProvider#getSupportedLanguages(String)}).
      * @param sourceLanguage the source language. If null the service will usually attempt
      *                       to detect the language (but this might depend on implementation).
      * @return Result of translation containing a translated text encapsulated into an instance of
      *         {@link SavedTranslatedText} if the text when the text was saved or found in local
-     *         history, or {@link com.cardiomood.translate.provider.TranslatedText} when history is disabled.
+     *         history, or {@link translate.provider.TranslatedText} when history is disabled.
      */
     @Override
     public TranslatedText translate(String text, Language targetLanguage, Language sourceLanguage) {
@@ -87,7 +93,7 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
                 return result;
         }
 
-        // Attempt to com.cardiomood.translate using underlying provider
+        // Attempt to translate using underlying provider
         RuntimeException onlineEx = null;
         try {
             result = super.translate(text, targetLanguage, sourceLanguage);
@@ -101,16 +107,16 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
                             getTranslation(result),
                             getTranslateProvider().getClass().getName()
                     );
-                    Log.d(TAG, "com.cardiomood.translate(): history item has been saved, ID=" + entity.getId());
+                    Log.d(TAG, "translate(): history item has been saved, ID=" + entity.getId());
                     result = new SavedTranslatedText(entity);
                 } catch (SQLException ex) {
-                    Log.w(TAG, "com.cardiomood.translate(): translation hasn't been saved due to SQL exception.", ex);
+                    Log.w(TAG, "translate(): translation hasn't been saved due to SQL exception.", ex);
                 }
             }
             return result;
 
         } catch (RuntimeException ex) {
-            Log.w(TAG, "com.cardiomood.translate(): online translation failed due to network error", ex);
+            Log.w(TAG, "translate(): online translation failed due to network error", ex);
             onlineEx = ex;
         }
 
@@ -235,7 +241,7 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
                 return new SavedTranslatedText(entity);
             }
         } catch (SQLException ex) {
-            Log.w(TAG, "com.cardiomood.translate(): failed to find translation due to SQL exception.", ex);
+            Log.w(TAG, "translate(): failed to find translation due to SQL exception.", ex);
         }
 
         // not found

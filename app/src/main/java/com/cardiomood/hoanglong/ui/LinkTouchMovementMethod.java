@@ -7,9 +7,21 @@ import android.text.method.LinkMovementMethod;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
+/**
+ * Enables {@link TouchableSpan} to receive touch events.
+ * <br/>
+ * From: http://stackoverflow.com/a/7292485/1199452
+ *
+ * Created by Anton Danshin on 01/12/14.
+ */
 public class LinkTouchMovementMethod extends LinkMovementMethod {
 
 
+    /**
+     * {@inheritDoc}
+     *
+     * The code copied from {@link LinkMovementMethod#onTouchEvent(TextView, Spannable, MotionEvent)}.
+     */
     @Override
     public boolean onTouchEvent(TextView widget, Spannable buffer, MotionEvent event) {
 

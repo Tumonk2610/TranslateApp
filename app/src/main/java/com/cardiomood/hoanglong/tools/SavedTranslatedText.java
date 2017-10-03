@@ -4,8 +4,11 @@ import com.cardiomood.hoanglong.db.entity.TranslationHistoryEntity;
 
 import java.util.Arrays;
 
-import com.cardiomood.translate.provider.TranslatedText;
+import translate.provider.TranslatedText;
 
+/**
+ * Created by Anton Danshin on 05/12/14.
+ */
 public class SavedTranslatedText extends TranslatedText {
 
     private TranslationHistoryEntity historyItem;

@@ -1,11 +1,11 @@
 package com.cardiomood.hoanglong.tools;
 
-import com.cardiomood.hoanglong.db.DatabaseHelper;
 import com.cardiomood.hoanglong.db.DatabaseHelperFactory;
-import com.cardiomood.hoanglong.db.entity.LanguageDao;
 import com.cardiomood.hoanglong.db.entity.LanguageEntity;
-import com.cardiomood.hoanglong.db.entity.TranslationHistoryDao;
 import com.cardiomood.hoanglong.db.entity.TranslationHistoryEntity;
+import com.cardiomood.hoanglong.db.DatabaseHelper;
+import com.cardiomood.hoanglong.db.entity.LanguageDao;
+import com.cardiomood.hoanglong.db.entity.TranslationHistoryDao;
 import com.j256.ormlite.dao.GenericRawResults;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.stmt.SelectArg;
@@ -20,6 +20,11 @@ import java.util.concurrent.Callable;
 
 import bolts.Task;
 
+/**
+ * Provides access to local history.
+ * <br/>
+ * Created by Anton Danshin on 01/12/14.
+ */
 public class TranslationHistoryHelper {
 
     private static final String TAG = TranslationHistoryHelper.class.getSimpleName();

@@ -12,10 +12,8 @@
         android:theme="@style/AppTheme"
         android:name="com.cardiomood.hoanglong.Application">
         <activity
-            android:name="com.cardiomood.hoanglong.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

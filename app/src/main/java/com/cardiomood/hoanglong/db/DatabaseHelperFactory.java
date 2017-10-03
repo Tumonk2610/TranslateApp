@@ -4,6 +4,13 @@ import android.content.Context;
 
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 
+/**
+ * Provides global access to the
+ *
+ * Actually, this is not a factory. :)
+ *
+ * Created by Anton Danshin on 01/12/14.
+ */
 public class DatabaseHelperFactory {
 
     private static DatabaseHelper databaseHelper;

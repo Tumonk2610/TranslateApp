@@ -28,13 +28,13 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.cardiomood.adapter.SuggestAdapter;
-import com.cardiomood.api.Api;
-import com.cardiomood.getSuggest.JSONData;
-import com.cardiomood.getSuggest.Request;
-import com.cardiomood.getSuggest.WritingGuide;
+import com.cardiomood.hoanglong.getSuggest.JSONData;
+import com.cardiomood.hoanglong.getSuggest.WritingGuide;
 import com.cardiomood.hoanglong.R;
-import com.cardiomood.model.Suggest;
+import com.cardiomood.hoanglong.adapter.SuggestAdapter;
+import com.cardiomood.hoanglong.api.Api;
+import com.cardiomood.hoanglong.getSuggest.Request;
+import com.cardiomood.hoanglong.model.Suggest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -80,6 +80,7 @@ public class InputFragment extends Fragment {
 
     String srcText = "";
 
+    public static String stringToPassBack;
 
     public InputFragment() {
         // Required empty public constructor
@@ -91,6 +92,13 @@ public class InputFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_input, container, false);
         setupUI(view);
+
+        if(TranslationFragment.isCheckPaint){
+            lnHandingInput.setVisibility(View.VISIBLE);
+            spnCategory.setVisibility(View.GONE);
+            InputMethodManager imm = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
         return view;
     }
 
@@ -184,7 +192,7 @@ public class InputFragment extends Fragment {
     }
 
     private void done() {
-        String stringToPassBack = InputEditText.getText().toString();
+        stringToPassBack = InputEditText.getText().toString();
 
         // put the String to pass back into an Intent and close this activity
 
@@ -192,6 +200,8 @@ public class InputFragment extends Fragment {
         intent.putExtra("keyName", stringToPassBack);
         getActivity().setResult(RESULT_OK, intent);
         getActivity().onBackPressed();
+
+        Log.d(TAG, "done: " + stringToPassBack);
     }
 
     public class DrawingView extends View {
@@ -373,7 +383,7 @@ public class InputFragment extends Fragment {
             rvSuggest.hasFixedSize();
             rvSuggest.setAdapter(suggestAdapter);
 
-            suggestAdapter.setOnItemClick(new View.OnClickListener() {
+            suggestAdapter.setOnItemClick(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Suggest suggestModel = (Suggest) view.getTag();

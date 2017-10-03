@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.regex.Pattern;
 
+/**
+ * Created by Anton Danshin on 01/12/14.
+ */
 public class ClickableWordsHelper {
 
     private static final MovementMethod MOVEMENT_METHOD = new LinkTouchMovementMethod();

@@ -1,3 +1,4 @@
-## VCCorpTranslate
-> Demo app translate using Yandex API . Intern VCCorp
+## yTranslate
+> Demo app for Yandex.Translate API
 
+Android 2.3+

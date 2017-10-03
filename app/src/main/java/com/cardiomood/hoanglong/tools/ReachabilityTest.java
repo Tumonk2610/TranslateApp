@@ -12,6 +12,11 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.net.UnknownHostException;
 
+/**
+ * Async task to test reachability of URL.
+ * <br/>
+ * Snatched from some blog post.
+ */
 public class ReachabilityTest extends AsyncTask<Void, Void, Boolean> {
     
     public interface Callback {

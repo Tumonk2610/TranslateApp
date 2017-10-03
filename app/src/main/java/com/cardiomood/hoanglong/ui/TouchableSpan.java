@@ -5,6 +5,9 @@ import android.text.style.ClickableSpan;
 import android.view.MotionEvent;
 import android.view.View;
 
+/**
+ * Created by Anton Danshin on 01/12/14.
+ */
 public abstract class TouchableSpan extends ClickableSpan  {
 
     /**

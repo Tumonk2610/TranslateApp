@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.speech.RecognizerIntent;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -24,10 +26,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cardiomood.hoanglong.R;
 import com.cardiomood.hoanglong.tools.HistoryAwareTranslateProvider;
 import com.cardiomood.hoanglong.tools.ReachabilityTest;
 import com.cardiomood.hoanglong.ui.ClickableWordsHelper;
+import com.cardiomood.hoanglong.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,25 +44,29 @@ import bolts.Continuation;
 import bolts.Task;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.cardiomood.translate.api.yandex.translate.YandexTranslateProvider;
-import com.cardiomood.translate.provider.Language;
-import com.cardiomood.translate.provider.TranslatedText;
+import translate.api.yandex.translate.YandexTranslateProvider;
+import translate.provider.Language;
+import translate.provider.TranslatedText;
 
 import static android.app.Activity.RESULT_OK;
 
+/**
+ * Created by Anton Danshin on 28/11/14.
+ */
 public class TranslationFragment extends Fragment {
 
     private static final String TAG = TranslationFragment.class.getSimpleName();
 
-    private static final String API_KEY = "trnsl.1.1.20141126T151929Z.2028746c57ef2cb5.29f3fed6a7b663d81c68ca53a58f5eb5e0077b5b";
+    private static final String API_KEY = "trnsl.1.1.20171001T144803Z.c4ea41f170fd1e8f.e9d23f19e2a6fc2e7adf7d6b686a0c21d425d9d8";
 
     public static final String ARG_FROM_HISTORY = "from_history";
     public static final String ARG_SRC_LANG = "src_lang";
     public static final String ARG_TARGET_LANG = "target_lang";
     public static final String ARG_SRC_TEXT = "src_text";
     public static final String ARG_TRANSLATION = "translation";
+
     private final int REQ_CODE_SPEECH_INPUT = 100;
-    private static final int SECOND_ACTIVITY_RESULT_CODE = 0;
+
 
     @InjectView(R.id.src_lang)
     TextView sourceLanguageView;
@@ -76,10 +82,26 @@ public class TranslationFragment extends Fragment {
     TextView translatedText;
     @InjectView(R.id.translated_from)
     TextView translatedFrom;
-    @InjectView(R.id.input_speech)
-    ImageView ivInputSpeech;
-    @InjectView(R.id.rl_volume)
-    RelativeLayout rlVolume;
+    @InjectView(R.id.lang_target)
+    TextView tvLangTarget;
+    @InjectView(R.id.iv_voice)
+    ImageView ivVoice;
+    @InjectView(R.id.iv_input_paint)
+    ImageView ivInputPaint;
+    @InjectView(R.id.iv_swap)
+    ImageView ivSwap;
+    @InjectView(R.id.rl_voice)
+    RelativeLayout rlVoice;
+    @InjectView(R.id.volume_text)
+    ImageView ivVolumeText;
+    @InjectView(R.id.lang_src)
+    TextView tvLangSrc;
+    @InjectView(R.id.volume_text_src)
+    ImageView ivVolumeSrc;
+    @InjectView(R.id.iv_close)
+    ImageView ivClose;
+
+    public  static boolean isCheckPaint = false;
 
     ClickableWordsHelper wordClickHelper;
 
@@ -93,6 +115,9 @@ public class TranslationFragment extends Fragment {
     private Timer mTimer = new Timer("typing_timer");
     private TimerTask deferredTranslateTask = null;
     private Handler mHandler;
+
+    TextToSpeech textSpeech;
+    TextToSpeech textSpeechSrc;
 
     public TranslationFragment() {
     }
@@ -141,9 +166,6 @@ public class TranslationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_translation, container, false);
 
         ButterKnife.inject(this, view);
-        initLanguages(savedInstanceState);
-
-        checkInternetConnection();
 
         wordClickHelper = new ClickableWordsHelper(translatedText);
         wordClickHelper.setCallback(new ClickableWordsHelper.Callback() {
@@ -169,17 +191,6 @@ public class TranslationFragment extends Fragment {
             public void onClick(View v) {
                 checkInternetConnection();
                 translate();
-            }
-        });
-
-        sourceText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                InputFragment inputFrag= new InputFragment();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.container, inputFrag,"findThisFragment")
-                        .addToBackStack(null)
-                        .commit();
             }
         });
 
@@ -222,8 +233,6 @@ public class TranslationFragment extends Fragment {
                         }, Task.UI_THREAD_EXECUTOR);
             }
         });
-
-
 
         targetLanguageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -276,6 +285,20 @@ public class TranslationFragment extends Fragment {
             }
         });
 
+        ivSwap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkInternetConnection();
+                Language src = selectedSourceLanguage;
+                String targetText = translatedText.getText().toString();
+                setSourceLanguage(selectedTargetLanguage);
+                setTargetLanguage(src);
+                sourceText.setText(targetText);
+                translatedText.setText(null);
+                translate();
+            }
+        });
+
         sourceText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -297,17 +320,98 @@ public class TranslationFragment extends Fragment {
             }
         });
 
-        ivInputSpeech.setOnClickListener(new View.OnClickListener() {
+        ivVoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 promptSpeechInput();
             }
         });
 
+        ivInputPaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                InputPaint();
+            }
+
+        });
+
+        if(InputFragment.stringToPassBack != null){
+            rlVoice.setVisibility(View.VISIBLE);
+            sourceText.setText(InputFragment.stringToPassBack);
+            Log.d(TAG, "onCreateView: " + InputFragment.stringToPassBack);
+        }
+
+        sourceText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                isCheckPaint = false;
+                InputFragment inputFrag= new InputFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, inputFrag,"findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        ivVolumeText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String content = translatedText.getText().toString();
+                textSpeech = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+                    @Override
+                    public void onInit(int status) {
+                        if(status != TextToSpeech.ERROR){
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                                textSpeech.setLanguage(translatedText.getTextLocale());
+                            }
+                            textSpeech.speak(content,TextToSpeech.QUEUE_FLUSH,null);
+                        }
+                    }
+                });
+            }
+        });
+
+        ivVolumeSrc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String content = sourceText.getText().toString();
+                textSpeechSrc = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+                    @Override
+                    public void onInit(int status) {
+                        if(status != TextToSpeech.ERROR){
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                                textSpeechSrc.setLanguage(sourceText.getTextLocale());
+                            }
+                            textSpeechSrc.speak(content,TextToSpeech.QUEUE_FLUSH,null);
+                        }
+                    }
+                });
+            }
+        });
+
+        ivClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rlVoice.setVisibility(View.GONE);
+                sourceText.setText(null);
+                translatedText.setText(null);
+                translatedFrom.setText("N/A");
+                tvLangTarget.setText("N/A");
+                tvLangSrc.setText("N/A");
+            }
+        });
+
         return view;
     }
 
-
+    private void InputPaint() {
+        isCheckPaint = true;
+        InputFragment inputFrag= new InputFragment();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, inputFrag,"findThisFragment")
+                .addToBackStack(null)
+                .commit();
+    }
 
     private void promptSpeechInput() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -336,34 +440,21 @@ public class TranslationFragment extends Fragment {
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     sourceText.setText(result.get(0));
+                    rlVoice.setVisibility(View.VISIBLE);
                 }
                 break;
             }
-
-            case SECOND_ACTIVITY_RESULT_CODE:
-                if (resultCode == RESULT_OK) {
-
-                    // get String data from Intent
-                    String returnString = data.getStringExtra("keyName");
-
-                    // set text view with string
-                    sourceText.setText(returnString);
-                    rlVolume.setVisibility(View.VISIBLE);
-                }
-
         }
     }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initLanguages(savedInstanceState);
 
-
-//    @Override
-//    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//        initLanguages(savedInstanceState);
-//
-//        checkInternetConnection();
-//        // TODO: there is a small bug in save/restore. Revise later!
-//    }
+        checkInternetConnection();
+        // TODO: there is a small bug in save/restore. Revise later!
+    }
 
     @Override
     public void onAttach(Activity activity) {
@@ -415,6 +506,8 @@ public class TranslationFragment extends Fragment {
 
         translatedText.setText(null);
         translatedFrom.setText("N/A");
+        tvLangTarget.setText("N/A");
+        tvLangSrc.setText("N/A");
     }
 
     private void translate() {
@@ -424,6 +517,9 @@ public class TranslationFragment extends Fragment {
         final String text = sourceText.getText().toString().trim();
         final Language srcLang = selectedSourceLanguage;
         final Language targetLang = selectedTargetLanguage;
+
+        tvLangTarget.setText(targetLang.getName());
+        Log.d(TAG, "translate: " + targetLang.getLanguage() + targetLang.getName());
 
         if (text.isEmpty() || targetLang == null)
             return;
@@ -436,7 +532,7 @@ public class TranslationFragment extends Fragment {
                         translateButton.setEnabled(true);
                         if (task.isFaulted()) {
                             // handle error
-                            Log.e(TAG, "com.cardiomood.translate() failed with exception", task.getError());
+                            Log.e(TAG, "translate() failed with exception", task.getError());
 //                            Toast.makeText(getActivity(), "Translation failed. Check Internet connection.",
 //                                    Toast.LENGTH_SHORT).show();
                         } else if (task.isCompleted()) {
@@ -479,9 +575,12 @@ public class TranslationFragment extends Fragment {
         Language lang = supportedLanguages.get(text.getSourceLanguage());
         if (lang != null) {
             translatedFrom.setText(lang.getName());
+            tvLangSrc.setText(lang.getName());
+
             setSourceLanguage(lang);
         } else {
             translatedFrom.setText("N/A");
+            tvLangSrc.setText("N/A");
         }
 
         lang = supportedLanguages.get(text.getTargetLanguage());
@@ -516,7 +615,9 @@ public class TranslationFragment extends Fragment {
         if (selectedSourceLanguage == null || selectedSourceLanguage.equals(selectedTargetLanguage)) {
             // make swap languages disabled
             swapButton.setEnabled(false);
+            ivSwap.setEnabled(false);
         } else {
+            swapButton.setEnabled(true);
             swapButton.setEnabled(true);
         }
     }
@@ -538,6 +639,7 @@ public class TranslationFragment extends Fragment {
         // update target language
         selectedTargetLanguage = lang;
         targetLanguageView.setText(lang == null ? "Detect Language" : lang.toString());
+        tvLangTarget.setText(lang.toString());
 
         // swap languages if necessary
         if (lang != null && lang.equals(selectedSourceLanguage)) {
@@ -553,7 +655,7 @@ public class TranslationFragment extends Fragment {
     }
 
     /**
-     * If there is a scheduled com.cardiomood.translate timer task - cancel it!.
+     * If there is a scheduled translate timer task - cancel it!.
      */
     private void cancelDeferredTranslate() {
         if (deferredTranslateTask != null) {

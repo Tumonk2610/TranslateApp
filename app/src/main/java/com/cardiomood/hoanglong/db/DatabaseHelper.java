@@ -4,10 +4,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.cardiomood.hoanglong.db.entity.LanguageDao;
 import com.cardiomood.hoanglong.db.entity.LanguageEntity;
 import com.cardiomood.hoanglong.db.entity.TranslationHistoryDao;
 import com.cardiomood.hoanglong.db.entity.TranslationHistoryEntity;
+import com.cardiomood.hoanglong.db.entity.LanguageDao;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.misc.TransactionManager;
 import com.j256.ormlite.support.ConnectionSource;
@@ -16,6 +16,9 @@ import com.j256.ormlite.table.TableUtils;
 import java.sql.SQLException;
 import java.util.concurrent.Callable;
 
+/**
+ * Created by Anton Danshin on 01/12/14.
+ */
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String TAG = DatabaseHelper.class.getSimpleName();

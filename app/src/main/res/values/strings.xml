@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">VCCorpTranslate</string>
+    <string name="app_name">VCCorp Translate</string>
     <string name="title_section1">Translate</string>
     <string name="title_section2">Favorites</string>
     <string name="title_section3">History</string>
@@ -10,8 +10,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="speech_not_supported">Sorry! Your device does\'t support speech</string>
     <string name="speech_prompt">Say something</string>

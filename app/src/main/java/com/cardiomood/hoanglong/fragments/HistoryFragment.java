@@ -25,11 +25,11 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cardiomood.hoanglong.R;
 import com.cardiomood.hoanglong.db.DatabaseHelperFactory;
 import com.cardiomood.hoanglong.db.entity.TranslationHistoryEntity;
 import com.cardiomood.hoanglong.ui.TouchEffect;
 import com.cardiomood.hoanglong.ui.TranslationHistoryAdapter;
+import com.cardiomood.hoanglong.R;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -38,6 +38,16 @@ import java.util.concurrent.Callable;
 
 import bolts.Continuation;
 import bolts.Task;
+
+/**
+ * A fragment representing a list of Items.
+ * <p/>
+ * Large screen devices (such as tablets) are supported by replacing the ListView
+ * with a GridView.
+ * <p/>
+ * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
+ * interface.
+ */
 public class HistoryFragment extends Fragment
         implements AbsListView.OnItemClickListener, SearchView.OnQueryTextListener, SearchView.OnCloseListener {
 

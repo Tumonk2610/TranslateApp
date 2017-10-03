@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-0816ea7a82ca5b8af80bcfff517af5a7b705d9d5.jar" />
+    </item>
+    <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
         jumboMode="false"
         revision="26.0.1"
         sha1="a681c044244d9fc375198588297a39ba78028423">
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-6019607a0c456a255f03a2129f7e178a7be37d6f.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/libs/endless-1.2.3.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="82f55b82598a8a61d6f0f6d13924b7b0403650f4">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/endless-1.2.3-576a7fde7499e78c317c7db5e028295536871f95.jar" />
     </item>
     <item
         jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/classes.jar"
@@ -16,18 +30,18 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-93833cd612f7dddfdb0e00afba64807539be0652.jar" />
     </item>
     <item
-        jar="/Users/apple/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1-ecfab9245e34b41d6133e435a1fbfce40e2b2eef.jar" />
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-71e56b30d79f2cd39c6282527dc0bad7ac526237.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/26.0.0-alpha1/classes.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-352cf3165f29fcd624fcf9b6bba0417e3f2eca41.jar" />
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-b614a500aaf73d3303ef9a243b6620dae71cc573.jar" />
     </item>
     <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
@@ -51,18 +65,18 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/butterknife-6.0.0-af423920fe8db60fb373b21e75ffa6d3303e7e02.jar" />
     </item>
     <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/ormlite-core-4.48-bbfded553e8b8cdcab080b6ee6910660d880673f.jar" />
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-438e54ddb916b9e261925f70ca80264a8cf0bbf5.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/classes.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-5c0a0881b49d3bd87f7e854983a8a0f4b8d6ca57.jar" />
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-7386967b3a510745309b0bc7f535d77b81cea257.jar" />
     </item>
     <item
         jar="/Users/apple/Downloads/yTranslate-master/app/libs/endless-1.2.3.jar"
@@ -72,11 +86,11 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/endless-1.2.3-1ae49ce0920e284e92a7eb892543c3093b7fd725.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.0.0-alpha1/classes.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-e971204989aa2bd96dac5d82a81a6a178162e527.jar" />
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-8a20de9402ec50c242b264d6f1a229f06b497bc5.jar" />
     </item>
     <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.0.0/3a10b25b6820e19102e118711afe6a66c0bae123/butterknife-6.0.0.jar"
@@ -86,25 +100,11 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/butterknife-6.0.0-af423920fe8db60fb373b21e75ffa6d3303e7e02.jar" />
     </item>
     <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/gson-2.3.1-337273c388a9fbc5784c298e1e6fcdb65876ced2.jar" />
-    </item>
-    <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/classes.jar"
-        jumboMode="false"
-        revision="26.0.1"
-        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-2aea60775e7cbb80ca8687ab9aa23be0625a9633.jar" />
-    </item>
-    <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/classes.jar"
-        jumboMode="false"
-        revision="26.0.1"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-b744034d235d23dd5bde35c3ca9af02d956401b3.jar" />
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-c82cc64962f553e96240e87a31a140602835b36d.jar" />
     </item>
     <item
         jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/classes.jar"
@@ -114,18 +114,11 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-236cdebc70a56c2e782e31cce37770d76f9335f2.jar" />
     </item>
     <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.3/e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e/bolts-android-1.1.3.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-71cf86c65a2d0e8370db539feade27abced066a6.jar" />
-    </item>
-    <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
-        jumboMode="false"
-        revision="26.0.1"
-        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/eventbus-3.0.0-68e3fce46f71cc01b790794cdbfe1c060852f676.jar" />
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-6dac8c79ead0030895c5bbd777e6a74c8e5a31c8.jar" />
     </item>
     <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
@@ -142,18 +135,18 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-101b6e6cd5bd9d13018f2b03a86fb09a5e4f8752.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/classes.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/libs/cwac-adapter-1.0.2.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-167f9a5c2ce54d437362a467af35f06b277dd9a7.jar" />
+        sha1="ede39952f31c0111edab58a77d63710316df0131">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/cwac-adapter-1.0.2-7c503e528eb89cabbed7d13e8f5cb50a4a9abecf.jar" />
     </item>
     <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/okio-1.6.0-2f17faa164d2f20dcefd4602951ee60d6cb78961.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-a609caf6dcb5e55d2fa3fd5a2ae5e81a1e3b4567.jar" />
     </item>
     <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
@@ -163,25 +156,25 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/ormlite-android-4.48-4707ee479d4b9d20b13f49b880cdf06721cf680f.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/libs/cwac-adapter-1.0.2.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="ede39952f31c0111edab58a77d63710316df0131">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/cwac-adapter-1.0.2-564aedfb054ab528b31c16cfd5fbc8d7b4277521.jar" />
-    </item>
-    <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/classes.jar"
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/libs/endless-1.2.3.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-31b1aa72f2f6b60261cd54e65e3ab508899f680d.jar" />
+        sha1="82f55b82598a8a61d6f0f6d13924b7b0403650f4">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/endless-1.2.3-0f8fcb26ccb85bb484bb219307b4de931f1ac5a1.jar" />
     </item>
     <item
-        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.0.0-alpha1/classes.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
         sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-ffba4047c2847770ed25b9cfeaaa7abd100219d2.jar" />
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-22a70fa15c1b6ba0f8faf97b0fad11453cf0e07a.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/libs/cwac-adapter-1.0.2.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="ede39952f31c0111edab58a77d63710316df0131">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/cwac-adapter-1.0.2-27b49a15c838348bcc1058df32738c087d2ce81a.jar" />
     </item>
     <item
         jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.3/e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e/bolts-android-1.1.3.jar"
@@ -189,6 +182,13 @@
         revision="20.0.0"
         sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-71cf86c65a2d0e8370db539feade27abced066a6.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/design/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-54721ed960c6f3c179abdf23c1dc4e48d12d10b8.jar" />
     </item>
     <item
         jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/classes.jar"
@@ -205,6 +205,202 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/endless-1.2.3-1ae49ce0920e284e92a7eb892543c3093b7fd725.jar" />
     </item>
     <item
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.5/7a15a7db50f86c4b64aa3367424a60e3a325b8f1/okhttp-2.7.5.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/okhttp-2.7.5-e43d05ab9ababed6e53e6c5ceb80a13db4963e18.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-6f7063bd7a3da7af44d909edcda5a08534123bae.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-e8706d52bd38ae829d6a937a87a3a3ad4800194c.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1-ecfab9245e34b41d6133e435a1fbfce40e2b2eef.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-352cf3165f29fcd624fcf9b6bba0417e3f2eca41.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-c2b7f0efaa826bf86f150f1247623210fb0bb759.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-964bf396a5b049732e42a35ae51e14e24bac3a4e.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-9e5d653c039663866a6dfb9f5f8269902d98a789.jar" />
+    </item>
+    <item
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/ormlite-core-4.48-bbfded553e8b8cdcab080b6ee6910660d880673f.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-40bb7afb8dcdafc9decbab250ae011efc5e5d377.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-3d8e6744363abc707759e5e83b234e644c476c5c.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-e971204989aa2bd96dac5d82a81a6a178162e527.jar" />
+    </item>
+    <item
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/gson-2.3.1-337273c388a9fbc5784c298e1e6fcdb65876ced2.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-d6c823ab1e89ecf4dec1bcccb53c74fd25987af3.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-2aea60775e7cbb80ca8687ab9aa23be0625a9633.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-b744034d235d23dd5bde35c3ca9af02d956401b3.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-5d8bf7b9cee165287cd47804862cf60cad00447b.jar" />
+    </item>
+    <item
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.3/e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e/bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-71cf86c65a2d0e8370db539feade27abced066a6.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-3b81eb0bea4a63442b2b5fd6350073d25e677e94.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-167f9a5c2ce54d437362a467af35f06b277dd9a7.jar" />
+    </item>
+    <item
+        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/okio-1.6.0-2f17faa164d2f20dcefd4602951ee60d6cb78961.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-9211c6c0248428ffd3ad0b71015cef8855e57816.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/libs/cwac-adapter-1.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ede39952f31c0111edab58a77d63710316df0131">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/cwac-adapter-1.0.2-564aedfb054ab528b31c16cfd5fbc8d7b4277521.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/apple/Documents/GitHub/TranslateApp/app/build/intermediates/pre-dexed/debug/classes-ebfd279ff7dcbf3b0cd4d119fbdd88468e4c290d.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-31b1aa72f2f6b60261cd54e65e3ab508899f680d.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-ffba4047c2847770ed25b9cfeaaa7abd100219d2.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-a05ddfeb393facc3b99866b3771be40a923ddb44.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/26.0.0-alpha1/classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-262cac6daf123caa4841c5782340c22a712d3344.jar" />
+    </item>
+    <item
         jar="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
@@ -219,11 +415,11 @@
         <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-e0d88103b0f338d59b677155b91b663c3481ef15.jar" />
     </item>
     <item
-        jar="/Users/apple/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.5/7a15a7db50f86c4b64aa3367424a60e3a325b8f1/okhttp-2.7.5.jar"
+        jar="/Users/apple/Documents/yTranslate-master/app/build/intermediates/exploded-aar/com.android.support/design/26.0.0-alpha1/classes.jar"
         jumboMode="false"
         revision="26.0.1"
-        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
-        <dex dex="/Users/apple/Downloads/yTranslate-master/app/build/intermediates/pre-dexed/debug/okhttp-2.7.5-e43d05ab9ababed6e53e6c5ceb80a13db4963e18.jar" />
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/apple/Documents/yTranslate-master/app/build/intermediates/pre-dexed/debug/classes-8034ef2772bb4c51fc1163dd13df9627bab23dc6.jar" />
     </item>
 
 </items>

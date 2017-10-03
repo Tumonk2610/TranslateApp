@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Created by Anton Danshin on 03/12/14.
+ */
 public class TranslationHistoryAdapter extends EndlessAdapter implements Filterable {
 
     private static final String TAG = TranslationHistoryAdapter.class.getSimpleName();

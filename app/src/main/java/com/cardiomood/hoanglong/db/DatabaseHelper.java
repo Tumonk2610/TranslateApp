@@ -16,9 +16,6 @@ import com.j256.ormlite.table.TableUtils;
 import java.sql.SQLException;
 import java.util.concurrent.Callable;
 
-/**
- * Created by Anton Danshin on 01/12/14.
- */
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String TAG = DatabaseHelper.class.getSimpleName();

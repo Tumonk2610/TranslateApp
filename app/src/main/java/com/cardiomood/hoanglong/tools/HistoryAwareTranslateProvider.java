@@ -21,26 +21,12 @@ import translate.provider.TranslateProvider;
 import translate.provider.TranslateProviderWrapper;
 import translate.provider.TranslatedText;
 
-/**
- * Encapsulates translation functionality and uses history database as cache.
- * Provides two different strategies to work with cache.
- *
- * Created by Anton Danshin on 05/12/14.
- */
 public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
 
     private static final String TAG = HistoryAwareTranslateProvider.class.getSimpleName();
 
-    /**
-     * Use local history as a primary translation service.
-     * This strategy should be used when there is no Internet or it is unstable.
-     * */
     public static final int HISTORY_FIRST = 0;
 
-    /**
-     * Use underlying translation provider as primary translation service.
-     * This strategy should be used with stable Internet.
-     */
     public static final int ONLINE_FIRST = 1;
 
     private TranslationHistoryHelper mHistoryHelper;
@@ -71,18 +57,6 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
         }
     }
 
-    /**
-     * Translate the provided text in to the target language.
-     *
-     * @param text text to translate
-     * @param targetLanguage the target language (one of the objects returned by
-     *                       {@link TranslateProvider#getSupportedLanguages(String)}).
-     * @param sourceLanguage the source language. If null the service will usually attempt
-     *                       to detect the language (but this might depend on implementation).
-     * @return Result of translation containing a translated text encapsulated into an instance of
-     *         {@link SavedTranslatedText} if the text when the text was saved or found in local
-     *         history, or {@link translate.provider.TranslatedText} when history is disabled.
-     */
     @Override
     public TranslatedText translate(String text, Language targetLanguage, Language sourceLanguage) {
         TranslatedText result = null;
@@ -177,18 +151,6 @@ public class HistoryAwareTranslateProvider extends TranslateProviderWrapper {
         }
 
         return result;
-    }
-
-    public boolean isHistoryEnabled() {
-        return historyEnabled;
-    }
-
-    public void setHistoryEnabled(boolean historyEnabled) {
-        this.historyEnabled = historyEnabled;
-    }
-
-    public int getStrategy() {
-        return strategy;
     }
 
     public void setStrategy(int strategy) {

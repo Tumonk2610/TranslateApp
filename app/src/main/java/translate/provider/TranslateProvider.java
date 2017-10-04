@@ -5,19 +5,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 import bolts.Task;
-/**
- * An abstract Translation Provider class.
- *
- * Its subclasses must implement basic operations, such as
- * <ul>
- *  <li>getting the list of supported translation directions;</li>
- *  <li>detecting the language of the text;</li>
- *  <li>translation of simple.</li>
- * </ul>
- * <br/>
- *
- * Created by Anton Danshin on 28/11/14.
- */
+
 public abstract class TranslateProvider {
 
     private static final String TAG = TranslateProvider.class.getSimpleName();

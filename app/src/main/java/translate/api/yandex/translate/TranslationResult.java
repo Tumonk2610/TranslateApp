@@ -2,9 +2,6 @@ package translate.api.yandex.translate;
 
 import java.util.List;
 
-/**
- * Created by antondanhsin on 26/11/14.
- */
 public class TranslationResult {
 
     private int code;

@@ -4,11 +4,6 @@ package translate.api.yandex.translate;
 import retrofit.http.GET;
 import retrofit.http.Query;
 
-/**
- * Interface of Yandex Translate API.
- *
- * Created by antondanhsin on 26/11/14.
- */
 public interface TranslateApi {
 
     @GET("/getLangs")

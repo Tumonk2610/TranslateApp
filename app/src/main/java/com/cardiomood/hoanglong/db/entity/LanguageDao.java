@@ -5,9 +5,6 @@ import com.j256.ormlite.support.ConnectionSource;
 
 import java.sql.SQLException;
 
-/**
- * Created by Anton Danshin on 05/12/14.
- */
 public class LanguageDao extends BaseDaoImpl<LanguageEntity, Long> {
 
     public LanguageDao(ConnectionSource connectionSource, Class<LanguageEntity> dataClass) throws SQLException {

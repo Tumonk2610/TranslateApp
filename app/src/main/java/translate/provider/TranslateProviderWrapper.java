@@ -3,12 +3,6 @@ package translate.provider;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Wrapper for Translation provider.
- * Can be subclassed to modify behavior without changing the original implementation.
- *
- * Created by Anton Danshin on 05/12/14.
- */
 public class TranslateProviderWrapper extends TranslateProvider {
 
     private final TranslateProvider mProvider;

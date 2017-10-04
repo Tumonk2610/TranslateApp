@@ -7,9 +7,6 @@ import retrofit.http.POST;
 import retrofit.mime.TypedString;
 
 
-/**
- * Created by Administrator on 24/11/2015.
- */
 public interface MyService {
     @Headers( "Content-Type: application/json" )
     @POST("/inputtools/request?ime=handwriting")

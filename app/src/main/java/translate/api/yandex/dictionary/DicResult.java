@@ -3,9 +3,6 @@ package translate.api.yandex.dictionary;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Anton Danshin on 29/11/14.
- */
 public class DicResult {
 
     private Map<String, Object> head;

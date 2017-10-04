@@ -5,9 +5,6 @@ import java.util.List;
 import retrofit.http.GET;
 import retrofit.http.Query;
 
-/**
- * Created by Anton Danshin on 29/11/14.
- */
 public interface DictionaryApi {
 
     public int FLAG_FAMILY = 0x0001;

@@ -50,9 +50,6 @@ import translate.provider.TranslatedText;
 
 import static android.app.Activity.RESULT_OK;
 
-/**
- * Created by Anton Danshin on 28/11/14.
- */
 public class TranslationFragment extends Fragment {
 
     private static final String TAG = TranslationFragment.class.getSimpleName();

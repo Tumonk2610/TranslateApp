@@ -3,9 +3,6 @@ package com.cardiomood.hoanglong.db.entity;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-/**
- * Created by Anton Danshin on 05/12/14.
- */
 @DatabaseTable(tableName = LanguageEntity.TABLE_NAME, daoClass = LanguageDao.class)
 public class LanguageEntity {
 

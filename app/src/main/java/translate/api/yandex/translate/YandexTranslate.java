@@ -3,9 +3,6 @@ package translate.api.yandex.translate;
 import retrofit.ErrorHandler;
 import retrofit.RestAdapter;
 
-/**
- * Created by Anton Danshin on 26/11/14.
- */
 public class YandexTranslate {
 
     private static String TAG = YandexTranslate.class.getSimpleName();

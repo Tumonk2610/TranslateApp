@@ -3,9 +3,6 @@ package translate.api.yandex.translate;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by antondanhsin on 26/11/14.
- */
 public class TranslationDirections {
 
     private List<String> dirs;

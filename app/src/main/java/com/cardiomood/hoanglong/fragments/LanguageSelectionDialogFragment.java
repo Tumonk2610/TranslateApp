@@ -19,9 +19,6 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import translate.provider.Language;
 
-/**
- * Created by Anton Danshin on 01/12/14.
- */
 public class LanguageSelectionDialogFragment extends DialogFragment {
 
     private static final String TAG = LanguageSelectionDialogFragment.class.getSimpleName();

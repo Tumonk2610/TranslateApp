@@ -1,8 +1,5 @@
 package translate.api.yandex.translate;
 
-/**
- * Created by antondanhsin on 26/11/14.
- */
 public class DetectionResult {
 
     private int code;

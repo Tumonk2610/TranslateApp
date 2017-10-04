@@ -9,13 +9,6 @@ import translate.provider.Language;
 import translate.provider.TranslateProvider;
 import translate.provider.TranslatedText;
 
-/**
- * An implementation of {@link translate.provider.TranslateProvider}
- * that works with Yandex.Translate API.
- * <br/>
- *
- * Created by Anton Danshin on 28/11/14.
- */
 public class YandexTranslateProvider extends TranslateProvider {
 
     private static final TranslateApi.TextFormat FORMAT = TranslateApi.TextFormat.PLAIN;

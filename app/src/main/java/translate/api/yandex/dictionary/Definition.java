@@ -2,9 +2,6 @@ package translate.api.yandex.dictionary;
 
 import java.util.List;
 
-/**
- * Created by Anton Danshin on 29/11/14.
- */
 public class Definition extends WrappedText {
 
     private String pos;

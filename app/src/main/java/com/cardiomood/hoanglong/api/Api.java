@@ -1,9 +1,6 @@
 package com.cardiomood.hoanglong.api;
 
 
-/**
- * Created by Administrator on 24/11/2015.
- */
 public class Api extends BaseApi {
     private MyService myService;
 

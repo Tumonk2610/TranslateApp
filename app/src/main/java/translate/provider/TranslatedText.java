@@ -2,12 +2,6 @@ package translate.provider;
 
 import java.util.List;
 
-/**
- * Holds the result of translation.
- * Can be subclassed to alter functionality or add more features.
- * <br/>
- * Created by Anton Danshin on 28/11/14.
- */
 public class TranslatedText {
 
     /** Source language code */

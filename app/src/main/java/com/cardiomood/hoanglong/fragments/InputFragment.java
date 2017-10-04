@@ -50,10 +50,6 @@ import retrofit.mime.TypedString;
 
 import static android.app.Activity.RESULT_OK;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class InputFragment extends Fragment {
 
     private static final String TAG = "hehe" ;

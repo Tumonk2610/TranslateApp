@@ -20,11 +20,6 @@ import java.util.concurrent.Callable;
 
 import bolts.Task;
 
-/**
- * Provides access to local history.
- * <br/>
- * Created by Anton Danshin on 01/12/14.
- */
 public class TranslationHistoryHelper {
 
     private static final String TAG = TranslationHistoryHelper.class.getSimpleName();

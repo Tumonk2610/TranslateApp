@@ -1,8 +1,5 @@
 package translate.api.yandex.dictionary;
 
-/**
- * Created by Anton Danshin on 29/11/14.
- */
 public class PosText extends WrappedText {
 
     private String pos;

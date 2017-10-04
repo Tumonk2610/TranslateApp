@@ -6,9 +6,6 @@ import java.util.Arrays;
 
 import translate.provider.TranslatedText;
 
-/**
- * Created by Anton Danshin on 05/12/14.
- */
 public class SavedTranslatedText extends TranslatedText {
 
     private TranslationHistoryEntity historyItem;

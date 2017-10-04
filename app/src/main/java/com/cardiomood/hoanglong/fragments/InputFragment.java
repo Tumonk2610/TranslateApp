@@ -28,12 +28,12 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.cardiomood.hoanglong.getSuggest.JSONData;
-import com.cardiomood.hoanglong.getSuggest.WritingGuide;
 import com.cardiomood.hoanglong.R;
 import com.cardiomood.hoanglong.adapter.SuggestAdapter;
 import com.cardiomood.hoanglong.api.Api;
+import com.cardiomood.hoanglong.getSuggest.JSONData;
 import com.cardiomood.hoanglong.getSuggest.Request;
+import com.cardiomood.hoanglong.getSuggest.WritingGuide;
 import com.cardiomood.hoanglong.model.Suggest;
 
 import org.json.JSONArray;
@@ -230,6 +230,9 @@ public class InputFragment extends Fragment {
         protected void onSizeChanged(int w, int h, int oldw, int oldh) {
             super.onSizeChanged(w, h, oldw, oldh);
 
+            width = w;
+            height = h;
+
             mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
             mCanvas = new Canvas(mBitmap);
         }
@@ -324,6 +327,30 @@ public class InputFragment extends Fragment {
 
             Log.d(TAG, "ink: " + a);
 
+//            //mCanvas.drawColor(0, PorterDuff.Mode.CLEAR);
+//            dv.clear();
+
+        }
+
+        public void clear()
+        {
+            mBitmap = Bitmap.createBitmap(1920,617 ,
+                    Bitmap.Config.ARGB_8888);
+
+            mCanvas = new Canvas(mBitmap);
+            mPath = new Path();
+            mBitmapPaint = new Paint(Paint.DITHER_FLAG);
+
+            //Added later..
+            mPaint = new Paint();
+            mPaint.setAntiAlias(true);
+            mPaint.setDither(true);
+            mPaint.setColor(Color.GREEN);
+            mPaint.setStyle(Paint.Style.STROKE);
+            mPaint.setStrokeJoin(Paint.Join.ROUND);
+            mPaint.setStrokeCap(Paint.Cap.ROUND);
+            mPaint.setStrokeWidth(12);
+            invalidate();
         }
 
         private void test(){

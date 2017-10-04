@@ -6,55 +6,19 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Tr" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="I" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3091ba2-dff6-4998-a3c7-fa10ca95ea23" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/HistoryFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/TouchEffect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/TranslationHistoryAdapter.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/api/Api.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/api/Api.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/api/MyService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/api/MyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelperFactory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelperFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/LanguageDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/LanguageDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/LanguageEntity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/LanguageEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/TranslationHistoryDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/TranslationHistoryDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/TranslationHistoryEntity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/entity/TranslationHistoryEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/LanguageSelectionDialogFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/LanguageSelectionDialogFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/TranslationFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/TranslationFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/HistoryAwareTranslateProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/HistoryAwareTranslateProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/ReachabilityTest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/ReachabilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/SavedTranslatedText.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/SavedTranslatedText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/TranslationHistoryHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/TranslationHistoryHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/ClickableWordsHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/ClickableWordsHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/LinkTouchMovementMethod.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/LinkTouchMovementMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/TouchableSpan.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/ui/TouchableSpan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Definition.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Definition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/DicResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/DicResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/DictionaryApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/DictionaryApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Example.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Example.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/PosText.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/PosText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Translation.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/Translation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/WrappedText.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/dictionary/WrappedText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/DetectionResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/DetectionResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslateApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslateApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslationDirections.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslationDirections.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslationResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/TranslationResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/YandexTranslate.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/YandexTranslate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/YandexTranslateProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/api/yandex/translate/YandexTranslateProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/provider/Language.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/provider/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProviderWrapper.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProviderWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslatedText.java" afterPath="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslatedText.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_input.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_input.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_suggest.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_suggest.xml" />
     </list>
     <ignored path="TranslateApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,34 +50,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TranslationFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/TranslationFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7848">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InputFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="320">
+              <caret line="329" column="14" selection-start-line="329" selection-start-column="14" selection-end-line="330" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_input.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_input.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_input.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+            <state relative-caret-position="142">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -1348,7 +1304,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/db/DatabaseHelperFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/HistoryFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/LanguageSelectionDialogFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/TranslationFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/tools/HistoryAwareTranslateProvider.java" />
@@ -1377,6 +1332,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/translate/provider/TranslateProviderWrapper.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_input.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_suggest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java" />
       </list>
     </option>
   </component>
@@ -2179,8 +2136,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2219,25 +2176,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_translation.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="248" column="17" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
@@ -2398,8 +2336,8 @@
         <state relative-caret-position="344">
           <caret line="361" column="5" selection-start-line="361" selection-start-column="5" selection-end-line="361" selection-end-column="5" />
           <folding>
-            <element signature="e#14209#14437#0" expanded="true" />
-            <element signature="e#14436#14437#0" expanded="true" />
+            <element signature="e#14209#14437#0" expanded="false" />
+            <element signature="e#14436#14437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2620,11 +2558,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_suggest.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+        <state relative-caret-position="30">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="2146" column="16" selection-start-line="2146" selection-start-column="16" selection-end-line="2146" selection-end-column="16" />
+          <folding>
+            <element signature="e#61975#61976#0" expanded="true" />
+            <element signature="e#62026#62027#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2633,9 +2585,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        <state relative-caret-position="142">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cardiomood/hoanglong/fragments/InputFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="329" column="14" selection-start-line="329" selection-start-column="14" selection-end-line="330" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
